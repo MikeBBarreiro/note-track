@@ -7,9 +7,6 @@ nav.top-bar(data-topbar, role="navigation", ng-controller='NavCtrl')
          a(href="/#/")
             span
    section.top-bar-section(ng-cloak)
-      //-------if online is true show WiFi symbol------//
-      ul.left(ng-show='online')
-         li: a: i.fa.fa-wifi
 
       ul.right(ng-show='init && !username')
          li: a(ui-sref='home') Home
@@ -17,6 +14,5 @@ nav.top-bar(data-topbar, role="navigation", ng-controller='NavCtrl')
          li: a(ui-sref='login') Login
       ul.right(ng-show='init && username')
          li: a(ui-sref='home') Home
-         li: a(ui-sref='rooms.list') Rooms
          li.divider
          li: a(ng-click='logout()') {{username}}
