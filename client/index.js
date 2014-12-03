@@ -10,6 +10,7 @@
         .state('register',      {url:'/register', templateUrl:'/views/users/users.html',      controller:'UsersCtrl'})
         .state('login',         {url:'/login',    templateUrl:'/views/users/users.html',      controller:'UsersCtrl'});
 
-
     }]);
+    // .run(['$rootScope', '$http', function($rootScope, $http){
+    // }]);
 })();
